@@ -57,6 +57,13 @@ int main (int argc, char *argv[]) {
    assert (dayOfWeek (TUESDAY,   FALSE,  2,  27) == MONDAY);
    assert (dayOfWeek (THURSDAY,  FALSE,  1,  3)  == THURSDAY);
 
+   assert (dayOfWeek (SATURDAY, TRUE, 2, 21) == FRIDAY);
+   assert(dayOfWeek(THURSDAY, TRUE, 1, 3) == WEDNESDAY);
+   assert (dayOfWeek (TUESDAY, TRUE, 8, 15) == TUESDAY);
+   assert (dayOfWeek (WEDNESDAY, TRUE, 1, 18) == WEDNESDAY);
+   assert (dayOfWeek (FRIDAY, TRUE, 1, 10) == THURSDAY);
+
+
    printf ("all tests passed - You are awesome!\n");
    return EXIT_SUCCESS;
 }
